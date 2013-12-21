@@ -8,7 +8,10 @@ class Numeros
       array.each do |x|
         hash[x] = 0 unless hash.keys.include?x
         hash[x] += 1 if hash.keys.include?x
-    end
-
+      end
+      hash.each do |l|
+          puts "#{l[0]} = #{l[1]}"
+      end
+      nil
   end
 end
