@@ -1,6 +1,4 @@
 class Numeros
-  def initialize
-  end
   def self.check
       # se crea un hash vacio
       hash =  {}
