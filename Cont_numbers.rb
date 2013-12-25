@@ -9,9 +9,9 @@ class Numeros
                ,4,4,5,5,5,5,6,6,5,5,5,66,66854789435,4,4,4,4,3,3,2,3,4,5,6,5,4,
                 2,222,3,3,4,6,7,8,9,7,5,4,3,3]
       # iteracion para evaluar los numeros
-      valores.each do |x|
-        hash[x] = 0 unless hash.keys.include?x
-        hash[x] += 1 if hash.keys.include?x
+      valores.each do |valor_actual|
+        hash[valor_actual] = 0 unless hash.keys.include? valor_actual
+        hash[valor_actual] += 1 if hash.keys.include? valor_actual
       end
       # iteracion para mostrar el resultado
       hash.each do |l|
