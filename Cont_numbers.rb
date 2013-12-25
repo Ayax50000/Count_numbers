@@ -12,8 +12,8 @@ class Numeros
         hash[valor_actual] += 1 if hash.keys.include? valor_actual
       end
       # iteracion para mostrar el resultado
-      hash.each do |l|
-          puts "#{l[0]} = #{l[1]}"
+      hash.each do |numero_actual|
+          puts "#{numero_actual[0]} = #{numero_actual[1]}"
       end
       nil
   end
