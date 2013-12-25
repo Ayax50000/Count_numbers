@@ -12,6 +12,5 @@ class Numeros
       hash.each do |numero_actual|
           puts "#{numero_actual[0]} = #{numero_actual[1]}"
       end
-nil
   end
 end
