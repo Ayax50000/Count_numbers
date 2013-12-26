@@ -6,8 +6,7 @@ class Analizador
       valores.push(4,4,5,5,5,5,6,6,5,5,5,66,66854789435,4,4,4,4,3,3,2,3,4,5,6,5,4)
       valores.push(2,222,3,3,4,6,7,8,9,7,5,4,3,3)
       valores.each do |valor_actual|
-        resultados[valor_actual] = 0 unless resultados.keys.include? valor_actual
-        resultados[valor_actual] += 1 if resultados.keys.include? valor_actual
+        resultados[valor_actual] = (resultados.keys.include? valor_actual)? 0 , resulados[valor_actual] += 1
       end
       resultados.each do |numero_actual|
           puts "#{numero_actual[0]} = #{numero_actual[1]}"
